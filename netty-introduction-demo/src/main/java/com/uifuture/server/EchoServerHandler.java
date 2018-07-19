@@ -47,16 +47,20 @@ public class EchoServerHandler extends ChannelInboundHandlerAdapter {
     }
 
     /**
-     * 通知处理器最后的 channelRead() 是当前批处理中的最后一条消息时调用
-     *
+     *  当前读操作读取的最后一个消息被channelRead()方法消费时调用. 如果ChannelOption.AUTO_READ 属性被设置为off,
+     *  不会再尝试从当前channel中读取inbound数据, 直到ChannelHandlerContext.read()方法被调用.
      * @param ctx
      * @throws Exception
      */
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
+        System.out.println("channel 通道读取完成");
         //冲刷所有待审消息到远程节点。关闭通道后，操作完成
+        //第一种写法 写一个空的buf，并刷新写出区域。完成后关闭sock channel连接。
         ctx.writeAndFlush(Unpooled.EMPTY_BUFFER)
                 .addListener(ChannelFutureListener.CLOSE);
+        //ctx.flush(); // 第二种方法：在client端关闭channel连接，这样的话，会触发两次channelReadComplete方法。
+        //ctx.flush().close().sync(); // 第三种：改成这种写法也可以，但是这中写法，没有第一种方法的好。
     }
 
     /**

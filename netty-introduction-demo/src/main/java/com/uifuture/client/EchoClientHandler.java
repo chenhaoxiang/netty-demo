@@ -26,7 +26,7 @@ public class EchoClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
     @Override
     public void channelActive(ChannelHandlerContext ctx) {
         //当被通知该 channel 是活动的时候就发送信息
-        ctx.writeAndFlush(Unpooled.copiedBuffer("Hello Netty!",
+        ctx.writeAndFlush(Unpooled.copiedBuffer("Hello Netty! " + Long.toString(System.currentTimeMillis()),
                 CharsetUtil.UTF_8));
     }
 
