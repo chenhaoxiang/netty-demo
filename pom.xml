@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>netty-demo-client</module>
-        <module>netty-demo-server</module>
+        <module>netty-serialization-demo</module>
         <module>netty-introduction-demo</module>
     </modules>
 

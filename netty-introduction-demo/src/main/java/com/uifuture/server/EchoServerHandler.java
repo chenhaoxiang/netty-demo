@@ -35,7 +35,7 @@ public class EchoServerHandler extends ChannelInboundHandlerAdapter {
      * @throws Exception
      */
     @Override
-    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+    public void channelRead(ChannelHandlerContext ctx, Object msg) {
         ByteBuf in = (ByteBuf) msg;
         System.out.println("客户端发来消息: " + in.toString(CharsetUtil.UTF_8));
         //ChannelHandlerContext提供各种不同的操作用于触发不同的I/O时间和操作
@@ -53,7 +53,7 @@ public class EchoServerHandler extends ChannelInboundHandlerAdapter {
      * @throws Exception
      */
     @Override
-    public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
+    public void channelReadComplete(ChannelHandlerContext ctx) {
         System.out.println("channel 通道读取完成");
         //冲刷所有待审消息到远程节点。关闭通道后，操作完成
         //第一种写法 写一个空的buf，并刷新写出区域。完成后关闭sock channel连接。
