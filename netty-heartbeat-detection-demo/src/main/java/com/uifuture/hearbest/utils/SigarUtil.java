@@ -12,6 +12,8 @@ import java.net.URL;
 import java.util.MissingResourceException;
 
 /**
+ * Sigar工具类
+ * 获取Sigar单例
  * @author chenhx
  * @version SigarUtil.java, v 0.1 2018-08-10 上午 10:20
  */
