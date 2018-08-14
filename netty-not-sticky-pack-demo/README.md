@@ -41,6 +41,34 @@ initialBytesToStrip£º´ÓÊý¾ÝÖ¡ÖÐÌø¹ýµÄ×Ö½ÚÊý£¬±íÊ¾»ñÈ¡ÍêÒ»¸öÍêÕûµÄÊý¾Ý°üÖ®ºó£¬ºöÂ
 failFast£ºÈç¹ûÎªtrue£¬Ôò±íÊ¾¶ÁÈ¡µ½³¤¶ÈÓò£¬TAµÄÖµµÄ³¬¹ýmaxFrameLength£¬¾ÍÅ×³öÒ»¸ö TooLongFrameException£¬¶øÎªfalse±íÊ¾Ö»ÓÐµ±ÕæÕý¶ÁÈ¡Íê³¤¶ÈÓòµÄÖµ±íÊ¾µÄ×Ö½ÚÖ®ºó£¬²Å»áÅ×³ö TooLongFrameException£¬Ä¬ÈÏÇé¿öÏÂÉèÖÃÎªtrue£¬½¨Òé²»ÒªÐÞ¸Ä£¬·ñÔò¿ÉÄÜ»áÔì³ÉÄÚ´æÒç³ö¡£  
 
 
+## Ê²Ã´ÊÇÕ³°ü¡¢²ð°ü£¿
+¶ÔÓÚÊ²Ã´ÊÇÕ³°ü¡¢²ð°üÎÊÌâ£¬ÎÒÏëÏÈ¾ÙÁ½¸ö¼òµ¥µÄÓ¦ÓÃ³¡¾°£º  
+¿Í»§¶ËºÍ·þÎñÆ÷½¨Á¢Ò»¸öÁ¬½Ó£¬¿Í»§¶Ë·¢ËÍÒ»ÌõÏûÏ¢£¬¿Í»§¶Ë¹Ø±ÕÓë·þÎñ¶ËµÄÁ¬½Ó¡£  
+¿Í»§¶ËºÍ·þÎñÆ÷¼òÀúÒ»¸öÁ¬½Ó£¬¿Í»§¶ËÁ¬Ðø·¢ËÍÁ½ÌõÏûÏ¢£¬¿Í»§¶Ë¹Ø±ÕÓë·þÎñ¶ËµÄÁ¬½Ó¡£  
+¶ÔÓÚµÚÒ»ÖÖÇé¿ö£¬·þÎñ¶ËµÄ´¦ÀíÁ÷³Ì¿ÉÒÔÊÇÕâÑùµÄ£ºµ±¿Í»§¶ËÓë·þÎñ¶ËµÄÁ¬½Ó½¨Á¢³É¹¦Ö®ºó£¬·þÎñ¶Ë²»¶Ï¶ÁÈ¡¿Í»§¶Ë·¢ËÍ¹ýÀ´µÄÊý¾Ý£¬µ±¿Í»§¶ËÓë·þÎñ¶ËÁ¬½Ó¶Ï¿ªÖ®ºó£¬·þÎñ¶ËÖªµÀÒÑ¾­¶ÁÍêÁËÒ»ÌõÏûÏ¢£¬È»ºó½øÐÐ½âÂëºÍºóÐø´¦Àí...¡£  
+¶ÔÓÚµÚ¶þÖÖÇé¿ö£¬Èç¹û°´ÕÕÉÏÃæÏàÍ¬µÄ´¦ÀíÂß¼­À´´¦Àí£¬ÄÇ¾ÍÓÐÎÊÌâÁË  
+ÎÒÃÇÀ´¿´¿´µÚ¶þÖÖÇé¿öÏÂ¿Í»§¶Ë·¢ËÍµÄÁ½ÌõÏûÏ¢µÝ½»µ½·þÎñ¶ËÓÐ¿ÉÄÜ³öÏÖµÄÇé¿ö£º
+
+µÚÒ»ÖÖÇé¿ö£º  
+·þÎñ¶ËÒ»¹²¶Áµ½Á½¸öÊý¾Ý°ü£¬µÚÒ»¸ö°ü°üº¬¿Í»§¶Ë·¢³öµÄµÚÒ»ÌõÏûÏ¢µÄÍêÕûÐÅÏ¢£¬µÚ¶þ¸ö°ü°üº¬¿Í»§¶Ë·¢³öµÄµÚ¶þÌõÏûÏ¢£¬ÄÇÕâÖÖÇé¿ö±È½ÏºÃ´¦Àí£¬·þÎñÆ÷Ö»ÐèÒª¼òµ¥µÄ´ÓÍøÂç»º³åÇøÈ¥¶Á¾ÍºÃÁË£¬µÚÒ»´Î¶Áµ½µÚÒ»ÌõÏûÏ¢µÄÍêÕûÐÅÏ¢£¬Ïû·ÑÍêÔÙ´ÓÍøÂç»º³åÇø½«µÚ¶þÌõÍêÕûÏûÏ¢¶Á³öÀ´Ïû·Ñ¡£
+
+![Ã»ÓÐ·¢ÉúÕ³°ü¡¢²ð°üÊ¾ÒâÍ¼  ](http://blogimg.chenhaoxiang.cn/18-8-14/79484782.jpg)  
+Ã»ÓÐ·¢ÉúÕ³°ü¡¢²ð°üÊ¾ÒâÍ¼  
+
+µÚ¶þÖÖÇé¿ö£º  
+·þÎñ¶ËÒ»¹²¾Í¶Áµ½Ò»¸öÊý¾Ý°ü£¬Õâ¸öÊý¾Ý°ü°üº¬¿Í»§¶Ë·¢³öµÄÁ½ÌõÏûÏ¢µÄÍêÕûÐÅÏ¢£¬Õâ¸öÊ±ºò»ùÓÚÖ®Ç°Âß¼­ÊµÏÖµÄ·þÎñ¶Ë¾ÍÃÉÁË£¬ÒòÎª·þÎñ¶Ë²»ÖªµÀµÚÒ»ÌõÏûÏ¢´ÓÄÄ¶ù½áÊøºÍµÚ¶þÌõÏûÏ¢´ÓÄÄ¶ù¿ªÊ¼£¬ÕâÖÖÇé¿öÆäÊµÊÇ·¢ÉúÁËTCPÕ³°ü¡£  
+![TCPÕ³°üÊ¾ÒâÍ¼](http://blogimg.chenhaoxiang.cn/18-8-14/66480317.jpg)  
+   TCPÕ³°üÊ¾ÒâÍ¼  
+
+µÚÈýÖÖÇé¿ö£º  
+·þÎñ¶ËÒ»¹²ÊÕµ½ÁËÁ½¸öÊý¾Ý°ü£¬µÚÒ»¸öÊý¾Ý°üÖ»°üº¬ÁËµÚÒ»ÌõÏûÏ¢µÄÒ»²¿·Ö£¬µÚÒ»ÌõÏûÏ¢µÄºó°ë²¿·ÖºÍµÚ¶þÌõÏûÏ¢¶¼ÔÚµÚ¶þ¸öÊý¾Ý°üÖÐ£¬»òÕßÊÇµÚÒ»¸öÊý¾Ý°ü°üº¬ÁËµÚÒ»ÌõÏûÏ¢µÄÍêÕûÐÅÏ¢ºÍµÚ¶þÌõÏûÏ¢µÄÒ»²¿·ÖÐÅÏ¢£¬µÚ¶þ¸öÊý¾Ý°ü°üº¬ÁËµÚ¶þÌõÏûÏ¢µÄÊ£ÏÂ²¿·Ö£¬ÕâÖÖÇé¿öÆäÊµÊÇ·¢ËÍÁËTCP²ð£¬ÒòÎª·¢ÉúÁËÒ»ÌõÏûÏ¢±»²ð·ÖÔÚÁ½¸ö°üÀïÃæ·¢ËÍÁË£¬Í¬ÑùÉÏÃæµÄ·þÎñÆ÷Âß¼­¶ÔÓÚÕâÖÖÇé¿öÊÇ²»ºÃ´¦ÀíµÄ¡£  
+![TCP²ð°üÊ¾ÒâÍ¼](http://blogimg.chenhaoxiang.cn/18-8-14/58508223.jpg)  
+TCP²ð°üÊ¾ÒâÍ¼  
+±¾¶ÎÎÄ×Ö²Î¿¼Á´½Ó [https://my.oschina.net/andylucc/blog/625315](https://my.oschina.net/andylucc/blog/625315)  
+
+
+
+
 
 
 
