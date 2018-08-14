@@ -17,8 +17,7 @@ public class TinyEncoder extends MessageToByteEncoder {
     }
 
     /**
-     * 解码
-     *
+     * 编码
      * @param ctx
      * @param in
      * @param out
