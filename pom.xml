@@ -12,6 +12,7 @@
         <module>netty-serialization-demo</module>
         <module>netty-introduction-demo</module>
         <module>netty-heartbeat-detection-demo</module>
+        <module>netty-not-sticky-pack-demo</module>
     </modules>
 
     <dependencies>
