@@ -18,8 +18,7 @@ public class TinyEncoder extends MessageToByteEncoder {
     }
 
     /**
-     * 解码
-     *
+     * 编码
      * @param ctx
      * @param in
      * @param out
@@ -27,8 +26,10 @@ public class TinyEncoder extends MessageToByteEncoder {
      */
     @Override
     public void encode(ChannelHandlerContext ctx, Object in, ByteBuf out) {
-        byte[] data = FstSerializer.serialize(in);
-        out.writeBytes(data);
+        if (genericClass.isInstance(in)) {
+            byte[] data = FstSerializer.serialize(in);
+            out.writeBytes(data);
+        }
     }
 
 }

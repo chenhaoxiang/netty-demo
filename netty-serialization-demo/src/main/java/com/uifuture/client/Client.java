@@ -1,5 +1,5 @@
 /**
- * fshows.com
+ * uifuture.com
  * Copyright (C) 2013-2018 All Rights Reserved.
  */
 package com.uifuture.client;
@@ -51,8 +51,8 @@ public class Client {
                                 throws Exception {
                             ch.pipeline()
                                     // 添加编解码. 发送自定义的类型, 而Handler的方法接收的msg参数的实际类型也是相应的自定义类了
-                                    .addLast(new TinyDecoder(Request.class))
-                                    .addLast(new TinyEncoder(Response.class))
+                                    .addLast(new TinyEncoder(Request.class))
+                                    .addLast(new TinyDecoder(Response.class))
                                     .addLast(new ClientHandler());
                         }
                     });
