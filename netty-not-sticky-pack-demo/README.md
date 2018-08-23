@@ -18,7 +18,7 @@ LengthFieldBasedFrameDecoder
 本实例使用LengthFieldBasedFrameDecoder屏蔽TCP底层的拆包和粘包问题  
 使用对象进行传输  
 LengthFieldBasedFrameDecoder的构造函数：  
-````java
+``java
 public class LengthFieldBasedFrameDecoder extends ByteToMessageDecoder {
     //...
   public LengthFieldBasedFrameDecoder(ByteOrder byteOrder, 
@@ -31,7 +31,7 @@ public class LengthFieldBasedFrameDecoder extends ByteToMessageDecoder {
    }
    //...
 }
-````
+```
 byteOrder：表示字节流表示的数据是大端还是小端，因为Netty要读取Length字段的值，所以大端小端要设置好，默认Netty是大端序ByteOrder.BIG_ENDIAN。  
 maxFrameLength：表示的是包的最大长度，超出包的最大长度netty将会报错；  
 lengthFieldOffset：指的是长度域（Length）的偏移量，表示跳过指定长度个字节之后的才是长度域，也就是length前面的字节，也就是头部信息；  
